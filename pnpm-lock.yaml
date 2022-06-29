@@ -17,6 +17,7 @@ specifiers:
   '@vercel/node': ^1.15.2
   eslint: ^8.15.0
   framer-motion: ^6
+  prisma: ^4.0.0
   react: ^18.2.0
   react-dom: ^18.2.0
   typescript: ^4.6.4
@@ -42,6 +43,7 @@ devDependencies:
   '@types/react': 17.0.47
   '@types/react-dom': 17.0.17
   eslint: 8.18.0
+  prisma: 4.0.0
   typescript: 4.7.4
 
 packages:
@@ -2433,6 +2435,11 @@ packages:
   /@popperjs/core/2.11.5:
     resolution: {integrity: sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==}
     dev: false
+
+  /@prisma/engines/3.16.0-49.da41d2bb3406da22087b849f0e911199ba4fbf11:
+    resolution: {integrity: sha512-u/rG4lDHALolWBLr3yebZ+N2qImp3SDMcu7bHNJuRDaYvYEXy/MqfNRNEgd9GoPsXL3gofYf0VzJf2AmCG3YVw==}
+    requiresBuild: true
+    dev: true
 
   /@remix-run/dev/1.6.3_abnwi3ql5gibhllxrycxs3ju3y:
     resolution: {integrity: sha512-thGNy9usFUEBwrTKp8SzFe6IaoEplb0bZIXqylJw6y2HbS5CCsFoR7s937XIh4Er3tuPHCV09uzy/b1AEpzIaw==}
@@ -7146,6 +7153,15 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       parse-ms: 2.1.0
+    dev: true
+
+  /prisma/4.0.0:
+    resolution: {integrity: sha512-Dtsar03XpCBkcEb2ooGWO/WcgblDTLzGhPcustbehwlFXuTMliMDRzXsfygsgYwQoZnAUKRd1rhpvBNEUziOVw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 3.16.0-49.da41d2bb3406da22087b849f0e911199ba4fbf11
     dev: true
 
   /process-nextick-args/2.0.1:
